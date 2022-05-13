@@ -1,5 +1,5 @@
 <template>
-  <li v-if="todo">
+  <li>
     <span :class="{ checked: todo.done }">{{ todo.name }}</span>
     <div class="icon-container">
       <p @click="markAsDone" class="checkmark">✓</p>
@@ -7,7 +7,6 @@
     </div>
     <p class="date">{{ todo.date }}</p>
   </li>
-  <li v-else>There's nothing to do</li>
 </template>
 
 <script lang="ts">
